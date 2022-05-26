@@ -8,9 +8,7 @@ yf.pdr_override() # <== that's all it takes :-)
 dataTCS = pdr.get_data_yahoo("TCS.NS", start="2017-05-25", end="2022-05-26")
 dataASIANPAINT = pdr.get_data_yahoo("ASIANPAINT.NS", start="2017-05-25", end="2022-05-26")
 dataBRITANNIA = pdr.get_data_yahoo("BRITANNIA.NS", start="2017-05-25", end="2022-05-26")
-plt.plot(dataTCS['Close'])
-plt.plot(dataASIANPAINT['Close'])
-plt.plot(dataBRITANNIA['Close'])
+
 #plt.show()
 # dictionary of lists 
 dict = {'TCS': dataTCS['Close'], 'ASIANPAINT': dataASIANPAINT['Close'], 'BRITANNIA': dataBRITANNIA['Close']} 
