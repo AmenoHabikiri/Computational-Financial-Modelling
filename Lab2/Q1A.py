@@ -12,9 +12,6 @@ data1=data
 data1 = data[['TCS','ASIANPAINT','BRITANNIA']].pct_change().apply(lambda x: np.log(1+x))
 cov_matrix=data1[['TCS','ASIANPAINT','BRITANNIA']].cov()
 corr_matrix=data1[['TCS','ASIANPAINT','BRITANNIA']].corr()
-#print(data1)
-#print(cov_matrix)
-#print(corr_matrix)
 #randomly weighted portfolio's variance
 #to calculate yearly return assuming 250 market days per year
 k1=[] # Define an empty array for TCS
@@ -28,8 +25,7 @@ ind_er=[]
 ind_er.append(sum(k1)/len(k1))
 ind_er.append(sum(k2)/len(k2))
 ind_er.append(sum(k3)/len(k3))
-print(ind_er)
-############################3
+############################
 p_ret = [] # Define an empty array for portfolio returns
 p_vol = [] # Define an empty array for portfolio volatility
 p_weights = [] # Define an empty array for asset weights
