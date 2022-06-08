@@ -1,6 +1,5 @@
 from audioop import avg
 import pandas as pd
-import math
 from matplotlib import pyplot as plt
 from numpy import log
 import numpy as np

@@ -37,8 +37,7 @@ for portfolio in range(num_portfolios):
     weights = np.random.random(num_assets)
     weights = weights/np.sum(weights)
     p_weights.append(weights)
-    returns = np.dot(weights, ind_er) # Returns are the product of individual expected returns of asset and its 
-                                      # weights 
+    returns = np.dot(weights, ind_er) # Returns are the product of individual expected returns of asset and it's weights 
     p_ret.append(returns)
     var = cov_matrix.mul(weights, axis=0).mul(weights, axis=1).sum().sum()# Portfolio Variance
     sd = np.sqrt(var) #Daily standard deviation
